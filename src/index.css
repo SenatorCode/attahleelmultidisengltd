@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@theme {
+  --color-navy: #14143f;
+  --color-brand: #1b7fc4;
+  --color-sky: #5cc0eb;
+  --color-steel: #a7a9ac;
+  --color-signal: #e8383d;
+  --color-paper: #f5f7fa;
+  --font-display: "Montserrat", sans-serif;
+  --font-body: "Source Sans 3", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body {
+    font-family: var(--font-body);
+    color: #1f2433;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-display);
+  }
+}
